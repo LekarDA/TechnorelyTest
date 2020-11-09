@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">TechnorelyTest</string>
+  <string name="listeners">Listeners</string>
+  <string name="link">link</string>
+
+  <string-array name="countries">
+    <item>ukraine</item>
+    <item>spain</item>
+    <item>germany</item>
+  </string-array>
+</resources>
