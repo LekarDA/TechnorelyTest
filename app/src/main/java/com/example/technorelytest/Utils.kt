@@ -5,5 +5,4 @@ object Utils {
      const val BASE_URL = "https://ws.audioscrobbler.com"
      const val METHOD = "geo.gettopartists"
      const val FORMAT = "json"
-     const val EXTRA = "ID"
 }

@@ -10,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.technorelytest.R
-import com.example.technorelytest.Utils.EXTRA
 import com.example.technorelytest.ui.detail.DetailActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
@@ -68,5 +67,9 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
             putExtra(EXTRA, id)
         }
         startActivity(intent)
+    }
+
+    companion object{
+        const val EXTRA = "ID"
     }
 }

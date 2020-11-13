@@ -5,8 +5,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.example.technorelytest.R
-import com.example.technorelytest.Utils.EXTRA
 import com.example.technorelytest.data.models.EntityArtist
+import com.example.technorelytest.ui.main.*
 import com.squareup.picasso.Picasso
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_detail.*
@@ -23,7 +23,7 @@ class DetailActivity: AppCompatActivity() {
         setContentView(R.layout.activity_detail)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        viewModel.getArtistById(intent.getStringExtra(EXTRA))
+        viewModel.getArtistById(intent.getStringExtra(MainActivity.EXTRA))
 
         viewModel.artistLiveData.observe(this, Observer {
             initView(it)
